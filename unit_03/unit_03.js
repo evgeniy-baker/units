@@ -137,7 +137,7 @@ document.querySelector('.b-8').onclick = f8;
 //     если от 44 до 64 - то 3.
 //     В противном случае, вывести 0.
 
-function f9(){
+function f9(){ 
     let select = +document.querySelector('.i-9').value;
     let out = document.querySelector('.out-9');
     switch (true){
@@ -190,10 +190,15 @@ function f12(){
 document.querySelector('.b-12').onclick = f12;
 
 // Task 13
-// Дан input i-130. В отличие от предыдущего задания - input type number. По нажатию кнопки получите значение из input  в переменную, а затем выведите в out-13 typeof полученной переменной. Typeof позволяет определить тип данных. Если вы правильно все сделали - то удивительно, но тип данных будет string! Подумайте почему так?
+// Дан input i-130. В отличие от предыдущего задания - input type number.
+// По нажатию кнопки получите значение из input  в переменную, а затем 
+// выведите в out-13 typeof полученной переменной. Typeof позволяет определить тип данных. 
+// Если вы правильно все сделали - то удивительно, но тип данных будет string! Подумайте почему так?
 
 function f13(){
-
+    let num = document.querySelector('.i-130').value
+    let out = document.querySelector('.out-13')
+    out.innerHTML = typeof(num)
 }
 
 document.querySelector('.b-13').onclick = f13;
