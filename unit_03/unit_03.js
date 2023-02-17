@@ -211,8 +211,8 @@ document.querySelector('.b-13').onclick = f13;
 // нужно вывести результат операции 1+13 т.е.  14.
 
 function f14(){
-    let num1 = +document.querySelector('.i-141').value
-    let num2 = +document.querySelector('.i-142').value
+    let num1 = document.querySelector('.i-141').value
+    let num2 = document.querySelector('.i-142').value
     let select = document.querySelector('.s-143').value
     let out = document.querySelector('.out-14')
     if (select == '+'){
@@ -233,10 +233,23 @@ document.querySelector('.b-14').onclick = f14;
 
 
 // Task     15
-// Дан select s-151 и s-152, каждый из которых содержит 1 и 0.  Дан select s-153, который содержит две операции - && и || . Дана кнопка b-15, при нажатии на которую срабатывает функция f15. Функция выводит в out-15 результат логических операций выбранных в 3 select к числам выбранным в первом и втором select. Например выбрано 1 1 &&, нужно вывести результат операции 1&&1 т.е. 1 или 0.
+// Дан select s-151 и s-152, каждый из которых содержит 1 и 0.  Дан select s-153, 
+// который содержит две операции - && и || . Дана кнопка b-15, при нажатии на которую 
+// срабатывает функция f15. Функция выводит в out-15 результат логических операций 
+// выбранных в 3 select к числам выбранным в первом и втором select. Например выбрано 1 1 &&, 
+// нужно вывести результат операции 1&&1 т.е. 1 или 0.
 
 function f15(){
-
+    let num1 = document.querySelector('.s-151').value
+    let num2 = document.querySelector('.s-152').value
+    let select = document.querySelector('.s-153').value
+    let out = document.querySelector('.out-15')
+    if (select == '&&'){
+        out.innerHTML = num1 && num2
+    }
+    else if (select == '||'){
+        out.innerHTML = num1 || num2
+    }
 }
 
 document.querySelector('.b-15').onclick = f15;
