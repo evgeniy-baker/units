@@ -98,7 +98,8 @@ function f7() {
 document.querySelector('.b-7').onclick = f7;
 
 // Task 8.
-// Создайте div.out-8 и кнопку .b-8. При нажатии кнопки создавайте внутри div.out-8 элемент input.i-81 и кнопку .b-81 (innerHTML). Добавьте на созданную кнопку событие клик и запуск функции f81. Функция должна в .out-81 выводить value созданного input.i-81.
+// Создайте div.out-8 и кнопку .b-8. При нажатии кнопки создавайте внутри div.out-8 элемент input.i-81 и кнопку .b-81 (innerHTML).
+// Добавьте на созданную кнопку событие клик и запуск функции f81. Функция должна в .out-81 выводить value созданного input.i-81.
 
 function f8() {
     // кнопку создаем через ....innerHTML = '<button....</button>
@@ -115,20 +116,26 @@ function f81 () {
 document.querySelector('.b-8').onclick = f8;
 
 // Task 9
-//Создайте один input(radio).r-9  и button.b-9 - при нажатии на button если radio.r-9 выбран (активен, checked) выводите в .out-9 - value прописанное в r-9, либо 0 если не активен. 
+//Создайте один input(radio).r-9  и button.b-9 - при нажатии на button если radio.r-9 выбран (активен, checked)
+// выводите в .out-9 - value прописанное в r-9, либо 0 если не активен.
 
 function f9() {
-
+    let value = document.querySelector('.r-9').checked
+    let out = document.querySelector('.out-9')
+    out.innerHTML = value
 }
 
 document.querySelector('.b-9').onclick = f9;
 
 // Task 10
-// >Создайте input(color).i-10 и button.b-10 - при нажатии на кнопку окрашивайте div.out-10 выбранным цветом (имеется ввиду .style.background = ).
+// >Создайте input(color).i-10 и button.b-10 - при нажатии на кнопку окрашивайте div.out-10 выбранным цветом
+// (имеется ввиду .style.background = ).
 
 
 function f10() {
-
+    let value = document.querySelector('.i-10').value
+    let out = document.querySelector('.out-10')
+    out.style.background = value
 }
 
 document.querySelector('.b-10').onclick = f10;
