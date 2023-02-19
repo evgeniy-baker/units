@@ -211,8 +211,8 @@ document.querySelector('.b-13').onclick = f13;
 // нужно вывести результат операции 1+13 т.е.  14.
 
 function f14(){
-    let num1 = document.querySelector('.i-141').value
-    let num2 = document.querySelector('.i-142').value
+    let num1 = +document.querySelector('.i-141').value
+    let num2 = +document.querySelector('.i-142').value
     let select = document.querySelector('.s-143').value
     let out = document.querySelector('.out-14')
     if (select == '+'){
