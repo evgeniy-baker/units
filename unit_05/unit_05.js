@@ -142,7 +142,14 @@ document.querySelector('.b-7').onclick = t7;
 // Задача решается с помощью цикла.
 
 function t8() {
-
+    let value1 = document.querySelector('.i-81').value
+    let value2 = document.querySelector('.i-82').value
+    let out = document.querySelector('.out-8')
+    let string = ''
+    for ( let i = value1; i <= value2; i++){
+        string += i + ' '
+    }
+    out.innerHTML = string
 }
 
 document.querySelector('.b-8').onclick = t8;
