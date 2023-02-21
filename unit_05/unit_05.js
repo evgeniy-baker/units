@@ -166,7 +166,21 @@ document.querySelector('.b-8').onclick = t8;
 // цикл - один
 
 function t9() {
-
+    let value1 = document.querySelector('.i-91').value
+    let value2 = document.querySelector('.i-92').value
+    let out = document.querySelector('.out-9')
+    let string = ''
+    if (value1 > value2) {
+        for ( let i = value2; i <= value1; i++){
+            string += i + ' '
+        }
+    }
+    else {
+        for ( let i = value1; i <= value2; i++){
+            string += i + ' '
+        }
+    }
+    out.innerHTML = string
 }
 
 document.querySelector('.b-9').onclick = t9;
