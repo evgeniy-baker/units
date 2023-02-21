@@ -96,11 +96,18 @@ document.querySelector('.b-5').onclick = t5;
 // ******<br>
 // ******<br>
 //
-//Задача решается с помощью цикла. В каждой итерации цикл выводит 6 звездочек без пробелов. Перенос строки - br. Количество строк (итераций, повторений) цикла вводит пользователь в i-6.
+//Задача решается с помощью цикла. В каждой итерации цикл выводит 6 звездочек без пробелов. Перенос строки - br. 
+// Количество строк (итераций, повторений) цикла вводит пользователь в i-6.
 //
 
 function t6() {
-
+    let value = document.querySelector('.i-6').value
+    let out = document.querySelector('.out-6')
+    let string = ''
+    for ( let i = 0; i < value; i++){
+        string += '******<br>'
+    }
+    out.innerHTML = string
 }
 
 document.querySelector('.b-6').onclick = t6;
