@@ -121,7 +121,13 @@ document.querySelector('.b-6').onclick = t6;
 // Задача решается с помощью цикла.
 
 function t7() {
-
+    let value = document.querySelector('.i-7').value
+    let out = document.querySelector('.out-7')
+    let string = ''
+    for ( let i = value; i >= 0; i--){
+        string += i + ' '
+    }
+    out.innerHTML = string
 }
 
 document.querySelector('.b-7').onclick = t7;
