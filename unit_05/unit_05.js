@@ -191,7 +191,12 @@ document.querySelector('.b-9').onclick = t9;
 // Разделитель - пробел. Задача решается через цикл, а четность - через шаг (равный 2).
 
 function t10() {
-
+    let out = document.querySelector('.out-10')
+    let string = ''
+    for ( let i = 1950; i <= 2000; i += 2) {
+        string += i + ' '
+    }
+    out.innerHTML = string
 }
 
 document.querySelector('.b-10').onclick = t10;
@@ -206,6 +211,13 @@ document.querySelector('.b-10').onclick = t10;
 
 
 function t11() {
+    let div = document.querySelectorAll('.div-11')
+    let out = document.querySelector('.out-11')
+    let string = ''
+    for ( let i = 0; i < div.length; i++){
+        string += div[i].innerHTML + ' '
+    }
+    out.innerHTML = string
 
 }
 
