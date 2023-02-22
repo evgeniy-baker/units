@@ -264,7 +264,15 @@ document.querySelector('.b-13').onclick = t13;
 
 
 function t14() {
-
+    let elements = document.querySelectorAll('.i-14')
+    let out = document.querySelector('.out-14')
+    let string = ''
+    for ( let i = 0; i < elements.length; i++ ) {
+        if ( elements[i].checked ) {
+            string = elements[i].value
+        }
+    }
+    out.innerHTML = string
 }
 
 document.querySelector('.b-14').onclick = t14;
