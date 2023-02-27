@@ -152,7 +152,16 @@ document.querySelector('.b-7').onclick = t7;
 // Задача решается с помощью цикла  while.
 
 function t8() {
-
+    let minNum = document.querySelector('.i-81').value;
+    let maxNum = document.querySelector('.i-82').value;
+    let out = document.querySelector('.out-8');
+    let string = '';
+    let i = minNum;
+    while (i <= maxNum) {
+        string += i + ' ';
+        i++;
+    }
+    out.innerHTML = string
 }
 
 document.querySelector('.b-8').onclick = t8;
