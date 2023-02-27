@@ -106,7 +106,16 @@ document.querySelector('.b-5').onclick = t5;
 // Количество строк (итераций, повторений) цикла  while вводит пользователь в i-6.
 
 function t6() {
-
+    let num = document.querySelector('.i-6').value
+    let out = document.querySelector('.out-6')
+    let string = ''
+    let i = 1
+    while (i <= num) {
+        string += '******'
+        string += '<br>'
+        i++
+    }
+    out.innerHTML = string
 }
 
 document.querySelector('.b-6').onclick = t6;
@@ -120,7 +129,15 @@ document.querySelector('.b-6').onclick = t6;
 // Задача решается с помощью цикла  while.
 
 function t7() {
-
+    let num = document.querySelector('.i-7').value
+    let out = document.querySelector('.out-7')
+    let string = ''
+    let i = num
+    while (i >= 1) {
+        string += i + ' '
+        i--
+    }
+    out.innerHTML = string
 }
 
 document.querySelector('.b-7').onclick = t7;
