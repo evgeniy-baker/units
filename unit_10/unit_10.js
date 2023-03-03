@@ -72,8 +72,12 @@ document.querySelector('.b-4').onclick = f4;
 // Тест допустим массив [1,2,3,4,5,6,7,8,9,10] вывод: 8
 
 // let ar5 =
+let ar5 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 function f5() {
+    let total = 0;
+    total += ar5[0] + ar5[2] + ar5[3]
+    document.querySelector('.out-5').innerHTML = total;
 }
 
 document.querySelector('.b-5').onclick = f5;
