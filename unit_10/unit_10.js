@@ -133,7 +133,15 @@ document.querySelector('.b-7').onclick = f7;
 let ar8 = [];
 
 function f8() {
-    
+    ar8[3] = 3.14;
+    ar8[4] = 17;
+    ar8[5] = 5;
+    let str = '';
+    for (let i = 0; i < ar8.length; i++) {
+        str += ar7[i] + '-';
+    }
+    document.querySelector('.out-8').innerHTML = str;
+    document.querySelector('.out-8-1').innerHTML = ar8.length;
 }
 
 document.querySelector('.b-8').onclick = f8;
