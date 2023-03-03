@@ -76,7 +76,7 @@ let ar5 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 function f5() {
     let total = 0;
-    total += ar5[0] + ar5[2] + ar5[3]
+    total += ar5[0] + ar5[2] + ar5[3];
     document.querySelector('.out-5').innerHTML = total;
 }
 
@@ -89,14 +89,21 @@ document.querySelector('.b-5').onclick = f5;
 // Вывод в out-6
 
 // let ar6 =
+let ar6 = ['Evgeniy', 'Bulochnikov', 'Рак', '18.07.1994']
 
 function f6() {
+    let str = '';
+    for (let i = 0; i < ar6.length; i++) {
+        str += ar6[i] + ' ';
+    }
+    document.querySelector('.out-6').innerHTML = str;
 }
 
 document.querySelector('.b-6').onclick = f6;
 
 // Task 7
-// Добавьте в массив ar7  значения 'vietnam' с индексом 7 , 'turkey' с индексом 6, 'italy' с индексом 5. Добавление элементов сделайте в f7. Выведите массив на страницу в .out-7. Разделитель - пробел. Обращаю ваше внимание! Это программирование. Поэтому - никаких больших букв и тому подобного!!!!
+// Добавьте в массив ar7  значения 'vietnam' с индексом 7 , 'turkey' с индексом 6, 'italy' с индексом 5. 
+// Добавление элементов сделайте в f7. Выведите массив на страницу в .out-7. Разделитель - пробел. Обращаю ваше внимание! Это программирование. Поэтому - никаких больших букв и тому подобного!!!!
 // Во всех задачах где говорим второй, третий и т.д. имеем ввиду индекс
 // Вывод - по нажатию кнопки b-7
 // Вывод в out-7
@@ -104,6 +111,14 @@ document.querySelector('.b-6').onclick = f6;
 let ar7 = ['china', 'india', 'brazil', 'japan', 'egypt'];
 
 function f7() {
+    ar7[5] = 'italy';
+    ar7[6] = 'turkey';
+    ar7[7] = 'vietnam';
+    let str = '';
+    for (let i = 0; i < ar7.length; i++) {
+        str += ar7[i] + ' ';
+    }
+    document.querySelector('.out-7').innerHTML = str;
 }
 
 document.querySelector('.b-7').onclick = f7;
@@ -118,6 +133,7 @@ document.querySelector('.b-7').onclick = f7;
 let ar8 = [];
 
 function f8() {
+    
 }
 
 document.querySelector('.b-8').onclick = f8;
