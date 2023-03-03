@@ -210,7 +210,14 @@ document.querySelector('.b-11').onclick = f11;
 let ar12 = ['test', 'west', 'list', 'class', 'best'];
 
 function f12() {
-
+    let num = ar12[0];
+    ar12[0] = ar12[ar12.length - 1];
+    ar12[ar12.length - 1] = num;
+    let str = '';
+    for (let i = 0; i < ar12.length; i++) {
+        str += ar12[i] + ' ';
+    }
+    document.querySelector('.out-12').innerHTML = str;
 }
 
 document.querySelector('.b-12').onclick = f12;
