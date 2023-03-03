@@ -169,6 +169,10 @@ document.querySelector('.b-9').onclick = f9;
 let ar10 = [100, 200, 300, 400, 700, 121];
 
 function f10() {
+    let num1 = +ar10[1];
+    let num2 = +ar10[ar10.length - 1];
+    let total = num1 + num2;
+    document.querySelector('.out-10').innerHTML = total;
 }
 
 document.querySelector('.b-10').onclick = f10;
