@@ -188,7 +188,14 @@ document.querySelector('.b-10').onclick = f10;
 let ar11 = [2, 3, 4, 5, 6, 7];
 
 function f11() {
-
+    let num = ar11[2];
+    ar11[2] = ar11[4];
+    ar11[4] = num;
+    let str = '';
+    for (let i = 0; i < ar11.length; i++) {
+        str += ar11[i] + ' ';
+    }
+    document.querySelector('.out-11').innerHTML = str;
 }
 
 document.querySelector('.b-11').onclick = f11;
