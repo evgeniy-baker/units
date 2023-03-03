@@ -40,8 +40,10 @@ document.querySelector('.b-2').onclick = f2;
 // Тест допустим массив [1,2,3] вывод - 3
 
 // let ar3 =  // переменную обьявляем здесь!!!!
+let ar3 = ['Имя', 'Фамилия', ' Отчество', 1, 2, 3];
 
 function f3() {
+    document.querySelector('.out-3').innerHTML = ar3.length
 }
 
 document.querySelector('.b-3').onclick = f3;
@@ -54,8 +56,10 @@ document.querySelector('.b-3').onclick = f3;
 // Тест допустим массив [1,2,3,4,5,6,7,8,9,10] вывод: 1 4 9
 
 // let ar4 =  // переменную обьявляем эту здесь!!!!
+let ar4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 function f4() {
+    document.querySelector('.out-4').innerHTML = `${ar4[0]} ${ar4[3]} ${ar4[8]}`;
 }
 
 document.querySelector('.b-4').onclick = f4;
