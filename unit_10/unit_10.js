@@ -234,7 +234,11 @@ document.querySelector('.b-12').onclick = f12;
 let ar13 = ['test', 'west', 'list', 'class', 'best'];
 
 function f13() {
-
+    let string = '';
+    for (let i = 0; i < ar13.length; i++) {
+        string += i + ' ' + ar13[i] + ' ';
+    }
+    document.querySelector('.out-13').innerHTML = string;
 }
 
 document.querySelector('.b-13').onclick = f13;
