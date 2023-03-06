@@ -343,7 +343,13 @@ document.querySelector('.b-17').onclick = f17;
 let ar18 = [15, 24, 13, 78, 21, 4, 45, 67];
 
 function f18() {
-
+    let max = 0;
+    for (let i = 0; i < ar18.length; i++) {
+        if (+ar18[i] > max) {
+            max = ar18[i];
+        }
+    }
+    document.querySelector('.out-18').innerHTML = max;
 }
 
 document.querySelector('.b-18').onclick = f18;
