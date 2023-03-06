@@ -288,6 +288,27 @@ let ar16_even = [];
 
 function f16() {
 
+    for (let i = 0; i < ar16.length; i++) {
+        if (ar16[i] % 2 === 0) {
+            ar16_odd.push(ar16[i]);
+        }
+        else if (ar16[i] % 2 !== 0) {
+            ar16_even.push(ar16[i]);
+        }
+    }
+
+    let odd = '';
+    let even = '';
+
+    for (let i = 0; i < ar16_odd.length; i++) {
+        odd += ar16_odd[i] + ' ';
+    }
+    for (let i = 0; i < ar16_even.length; i++) {
+        even += ar16_even[i] + ' ';
+    }
+
+    document.querySelector('.out-16-odd').innerHTML = odd;
+    document.querySelector('.out-16-even').innerHTML = even;
 }
 
 document.querySelector('.b-16').onclick = f16;
