@@ -293,7 +293,7 @@ document.querySelector('.b-17').onclick = f17;
 let d18 = ['b', 'c', '45', 'e', 'z', 'y'];
 
 function f18() {
-
+    document.querySelector('.out-18').innerHTML = d18.includes(document.querySelector('.i-18').value);
 }
 
 document.querySelector('.b-18').onclick = f18;
@@ -309,9 +309,12 @@ let d19 = ['Your', 'payment', 'method', 'will', 'automatically', 'be', 'charged'
 let maxString = '';
 
 function f19() {
-    let max = d19[0].length;
+    let max = 0;
     for (let i = 0; i < d19.length; i++) {
-        
+        if (d19[i].length > max) {
+            max = d19[i].length;
+            maxString = d19[i];
+        }
     }
     document.querySelector('.out-19').innerHTML = maxString;
 }
@@ -327,7 +330,7 @@ document.querySelector('.b-19').onclick = f19;
 let d20 = [4, 5, 6, 7, 8, 9, 10];
 
 function f20() {
-
+    document.querySelector('.out-20').innerHTML = d20.join('');
 }
 
 document.querySelector('.b-20').onclick = f20;
