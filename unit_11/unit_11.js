@@ -309,9 +309,12 @@ let d19 = ['Your', 'payment', 'method', 'will', 'automatically', 'be', 'charged'
 let maxString = '';
 
 function f19() {
-    let max = d19[0].length;
+    let max = 0;
     for (let i = 0; i < d19.length; i++) {
-        
+        if (d19[i].length > max) {
+            max = d19[i].length;
+            maxString = d19[i];
+        }
     }
     document.querySelector('.out-19').innerHTML = maxString;
 }
