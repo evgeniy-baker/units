@@ -140,8 +140,12 @@ function f9() {
         [21, -34, -43],
         [44, -56]
     ];
-
-
+    for (let i = 0; i < a9.length; i++) {
+        for (let k = 0; k < a9[i].length; k++) {
+            if (a9[i][k] > 0) out += a9[i][k] + ' ';
+        }
+    }
+    document.querySelector('.out-9').innerHTML = out;
 }
 
 document.querySelector('.b-9').onclick = f9;
