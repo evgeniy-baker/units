@@ -229,7 +229,13 @@ document.querySelector('.b-12').onclick = f12;
 let a13 = [];
 
 function f13() {
-
+    for (let i = 1; i <= 8; i++) {
+        for (let k = 0; k <= 7; k ++) {
+            if (k % 2 === 0) a13.push(0);
+            else if (k % 2 !== 0) a13.push(1);
+        }
+    }
+    console.log(a13)
 }
 
 document.querySelector('.b-13').onclick = f13;
