@@ -296,7 +296,12 @@ let a14 = {
 };
 
 function f14() {
-
+    let string = '';
+    for (let key in a14) {
+        string += a14[key][0] + ' ';
+    }
+    document.querySelector('.out-14').innerHTML = string;
+    return string;
 }
 
 document.querySelector('.b-14').onclick = f14;
