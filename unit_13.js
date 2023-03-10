@@ -399,7 +399,17 @@ let a18 = {
 }
 
 function f18() {
+    let string = document.querySelector('.i-18').value;
+    let out = '';
+    for (let key in a18) {
+        for (let i = 0; i < a18[key].length; i++) {
+            if (key === string) {
+                out += a18[key][i] + ' '
+            }
+        }
+    }
 
+    document.querySelector('.out-18').innerHTML = out;
 }
 
 // Task 19
