@@ -319,7 +319,13 @@ let a15 = {
 };
 
 function f15() {
-
+    let string = '';
+    for (let key in a15) {
+        for (let i = 0; i < a15[key].length; i++) {
+            string += a15[key][i] + ' ';
+        }
+    }
+    document.querySelector('.out-15').innerHTML = string;
 }
 
 document.querySelector('.b-15').onclick = f15;
