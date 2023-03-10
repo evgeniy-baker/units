@@ -378,7 +378,13 @@ let a17 = {
 }
 
 function f17() {
-
+    let string = '';
+    for (let key in a17) {
+        if (a17[key].age > 30) {
+            string += a17[key].name + ' ';
+        }
+    }
+    document.querySelector('.out-17').innerHTML = string;
 }
 
 document.querySelector('.b-17').onclick = f17;
