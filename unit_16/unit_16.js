@@ -143,7 +143,13 @@ document.querySelector('.b-8').addEventListener('click', ()=>{
 let a9 = [ [4,3,2], [2,5], [0,0,0,0,0]];
 
 function f9() {
-
+    let max = 0;
+    for (item of a9) {
+        if ((item.length - 1) > max) {
+            max = item.length - 1;
+        }
+    }
+    return max;
 }
 
 document.querySelector('.b-9').addEventListener('click', ()=>{
