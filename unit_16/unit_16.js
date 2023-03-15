@@ -217,7 +217,11 @@ document.querySelector('.b-12').addEventListener('click', f12);
 let a13 = 'testone';
 
 function f13() {
-
+    let string = '';
+    for (item of a13) {
+        string += item + ' ';
+    }
+    document.querySelector('.out-13').innerHTML = string;
 }
 
 document.querySelector('.b-13').addEventListener('click', f13);
