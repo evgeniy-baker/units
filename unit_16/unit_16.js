@@ -184,7 +184,13 @@ let a11 = {
 }
 
 function f11() {
-
+    let string = '';
+    for (let item in a11) {
+        if (a11[item] > 10) {
+            string += a11[item] + ' ';
+        }
+    }
+    document.querySelector('.out-11').innerHTML = string;
 }
 
 document.querySelector('.b-11').addEventListener('click', f11);
