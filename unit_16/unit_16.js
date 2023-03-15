@@ -234,7 +234,11 @@ document.querySelector('.b-13').addEventListener('click', f13);
 let a14 = new Set([4,5,6]);
 
 function f14() {
-
+    let string = '';
+    for (item of a14) {
+        string += item + ' ';
+    }
+    document.querySelector('.out-14').innerHTML = string;
 }
 
 document.querySelector('.b-14').addEventListener('click', f14);
