@@ -162,7 +162,11 @@ document.querySelector('.b-9').addEventListener('click', ()=>{
 let a10 = [4, 6, 9, 'Hello'];
 
 function f10() {
-
+    let newArr = {};
+    for (item of a10) {
+        newArr[item] = item;
+    }
+    return newArr;
 }
 
 document.querySelector('.b-10').addEventListener('click', () => {
