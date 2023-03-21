@@ -2,8 +2,10 @@
 // Task 1 ============================================
 /* Дан input .i-1. Напишите функцию t1, которая выводит в .out-1 символ и возвращает его. Во всех последующих задачах - работаем с латиницей и цифрами.*/
 
-function t1() {
+function t1(e) {
+    document.querySelector('.out-1').innerHTML = e.key;
 }
+document.querySelector('.i-1').onkeypress = t1
 
 // ваше событие здесь!!!
 
