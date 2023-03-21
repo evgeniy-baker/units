@@ -2,17 +2,20 @@
 // Task 1 ============================================
 /* Дан input .i-1. Напишите функцию t1, которая выводит в .out-1 символ и возвращает его. Во всех последующих задачах - работаем с латиницей и цифрами.*/
 
-function t1() {
+function t1(e) {
+    document.querySelector('.out-1').innerHTML = e.key;
 }
+document.querySelector('.i-1').onkeypress = t1
 
 // ваше событие здесь!!!
 
 // Task 2 ============================================
 /*  Дан input .i-2. Напишите функцию t2, которая выводит в .out-2 код символа и возвращает его. */
 
-function t2() {
-
+function t2(e) {
+    document.querySelector('.out-2').innerHTML = e.keyCode;
 }
+document.querySelector('.i-2').onkeypress = t2;
 
 // ваше событие здесь!!!
 
