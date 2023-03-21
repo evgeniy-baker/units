@@ -12,9 +12,10 @@ document.querySelector('.i-1').onkeypress = t1
 // Task 2 ============================================
 /*  Дан input .i-2. Напишите функцию t2, которая выводит в .out-2 код символа и возвращает его. */
 
-function t2() {
-
+function t2(e) {
+    document.querySelector('.out-2').innerHTML = e.keyCode;
 }
+document.querySelector('.i-2').onkeypress = t2;
 
 // ваше событие здесь!!!
 
