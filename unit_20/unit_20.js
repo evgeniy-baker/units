@@ -120,26 +120,24 @@ ctrl+shift – не будут. Все символы вводятся в ниж
 */
 
 function t11(event) {
-    
+    let button = document.querySelectorAll('.button');
+
     removeClass();
 
-    if (event.key === "1") {
-        document.querySelector('.num1').classList.toggle('active');
+    function buttonOn() {
+        for (item of button) {
+            if (event.key == item.value) {
+                item.classList.add('active');
+            }
+        }
     }
-
-    else if (event.key === "2") {
-        document.querySelector('.num2').classList.toggle('active');
-    }
-
-    else if (event.key === "3") {
-        document.querySelector('.num3').classList.toggle('active');
-    }
-
+    buttonOn();
+    
 }
-document.querySelector('.i-11').onkeypress = t11
+document.querySelector('.i-11').onkeyup = t11;
 
 function removeClass() {
-    for (item of document.querySelectorAll('.number')) {
+    for (item of document.querySelectorAll('.button')) {
         item.classList.remove('active');
     }
 }
