@@ -137,6 +137,13 @@ const f9 = () => {
 let a10 = [67, '55', 2, 5, '4', '8', 8, '66', '54', 11];
 
 const f10 = (arr, elem) => {
+    let out = document.querySelector('.out-10')
+    for (let key in arr) {
+        if (elem == arr[key]) {
+            return key
+        }
+        out.innerHTML = key
+    }
 }
 
 
