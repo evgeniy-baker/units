@@ -114,14 +114,15 @@ let a9 = [
 
 const f9 = () => {
     let num = +document.querySelector('.i-9').value
-
-    for (item of a9) {
-        console.log(item)
-        for(i of item) {
-            console.log(a9.indexOf(num))
+    let index = ''
+    for (let key in a9) {
+        for (let i = 0; i < a9[key].length; i++) {
+            if (num === a9[key][i]) {
+                index += key + ' '
+            }
         }
     }
-
+    document.querySelector('.out-9').innerHTML = index
 }
 
 // TASK 10
