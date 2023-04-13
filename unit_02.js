@@ -107,6 +107,17 @@ const f6 = () => {
 let a7 = [21, 22, 23, 24, 25, 26, 27];
 
 const f7 = (arr, elem) => {
+    let out = document.querySelector('.out-7')
+    let count = 0
+
+    for (item of arr) {
+        if (elem === item) {
+            count += 1
+        }
+    }
+
+    if (count > 0) return out.innerHTML = true
+    else out.innerHTML = false
 }
 
 // TASK 08
