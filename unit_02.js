@@ -53,6 +53,19 @@ const f3 = () => {
 let a4 = { a : [1,2,3], b : [3, 1, 5, 8], c : [88, 77, 66]};
 
 const f4 = () => {
+    let item = +document.querySelector('.i-4').value
+    let out = document.querySelector('.out-4')
+    let str = ''
+
+    for (let key in a4) {
+        for (i of a4[key]) {
+            if (item === i) {
+                str += key + ' '
+            }
+        }
+    }
+
+    out.innerHTML = str
 }
 
 // TASK 05
