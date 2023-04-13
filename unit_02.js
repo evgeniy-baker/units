@@ -79,7 +79,11 @@ const f4 = () => {
 let a5 = [22, 33, 44, 55, 66, 77, 88, 33, 44, 55, 66, 77];
 
 const f5 = () => {
- 
+    let num = +document.querySelector('.i-5-1').value
+    let index = +document.querySelector('.i-5-2').value
+    let out = document.querySelector('.out-5')
+
+    out.innerHTML = a5.includes(num, index)
 }
 
 // TASK 06
