@@ -116,6 +116,10 @@ const f7 = (arr, elem) => {
 let a8 = 'JSbestever';
 
 const f8 = () => {
+    let str = document.querySelector('.i-8').value
+    let out = document.querySelector('.out-8')
+
+    out.innerHTML = a8.includes(str)
 }
 
 // TASK 09
