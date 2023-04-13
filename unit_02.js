@@ -94,6 +94,10 @@ const f5 = () => {
 let a6 = ['Hi', 'wiFI'];
 
 const f6 = () => {
+    let str = document.querySelector('.i-6').value
+    let out = document.querySelector('.out-6')
+
+    out.innerHTML = a6.includes(str)
 }
 
 // TASK 07
