@@ -44,10 +44,12 @@ let a3_res;
 const f3 = () => {
     // a3_res = a3.map( (item, index) => {
     //         if (index == 2) {
-    // a3[3] = 100;
-    // }
-    // тут ваши вычисления
-    //});
+    //             a3[3] = 100;
+    //         }
+    // return item * 3
+    // });
+    // console.log(a3)
+    // console.log(a3_res)
 }
 
 // TASK 04
