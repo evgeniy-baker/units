@@ -88,7 +88,7 @@ document.querySelector('.div-8').addEventListener('touchend', t8);
 function t9(e) {
     document.querySelector('.div-9').innerHTML = e.touches.length;
 }
-document.querySelector('.div-9').addEventListener('touchend', t9);
+document.querySelector('.div-9').addEventListener('touchstart', t9);
 // ваше событие здесь!!!
 
 
@@ -104,10 +104,10 @@ function t10() {
 // Task 11 ============================================
 /*  Дан блок div-11. Добавьте на него событие touch. При срабатывании выводите радиус события radiusX, radiusY. */
 
-function t11() {
-
+function t11(e) {
+    console.log(e.changedTouches[0].radiusX, e.changedTouches[0].radiusY)
 }
-
+document.querySelector('.div-11').addEventListener('touchend', t11);
 // ваше событие здесь!!!
 
 // Task 12 ============================================
